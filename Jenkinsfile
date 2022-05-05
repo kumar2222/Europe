@@ -10,6 +10,8 @@ pipeline {
         }
         
 }
+}
+stages {
 stage('branches') { 
         when { 
         expression { 
@@ -20,7 +22,6 @@ stage('branches') {
 }
 post {
   always{
-  
      echo 'always success '
   }
   }
