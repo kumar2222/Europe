@@ -42,7 +42,7 @@ environment {
             // Run integration test
             steps {
                 script {
-                    def mvnHome = tool 'Maven 3.5.2'
+                    def mvnHome = tool 'MAVEN_HOME'
                     if (isUnix()) {
                         // just to trigger the integration test without unit testing
                         sh "'${mvnHome}/bin/mvn'  verify -Dunit-tests.skip=true"
