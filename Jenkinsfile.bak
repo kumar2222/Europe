@@ -37,7 +37,7 @@ environment {
 
             }
         }
-    }
+    
 	stage('Integration tests') {
             // Run integration test
             steps {
@@ -54,6 +54,6 @@ environment {
                 // cucumber reports collection
                 cucumber buildStatus: null, fileIncludePattern: '**/cucumber.json', jsonReportDirectory: 'target', sortingMethod: 'ALPHABETICAL'
             }
-        }
+     }   }
 }
 
