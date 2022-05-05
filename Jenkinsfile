@@ -7,7 +7,7 @@ environment {
     }
 	
 	 stages {
-def developmentArtifactVersion = ''
+
         stage('Build with unit testing') {
             steps {
                 // Run the maven build
@@ -91,5 +91,6 @@ stage('Development deploy approval and deployment') {
             }
         }		
 	}
+	       def developmentArtifactVersion = ''
 }
 
