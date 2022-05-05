@@ -29,6 +29,7 @@ environment {
                     }else {
                         bat(/"${mvnHome}\bin\mvn"  clean package/)
                         def pom = readMavenPom file: 'pom.xml'
+						print '77777777777777777777777777777777777777777'
                         print pom.version
                         junit '**//*target/surefire-reports/TEST-*.xml'
                         archive 'target*//*.jar'
