@@ -1,4 +1,4 @@
-pipeline ('MAVEN TEST CASES') {
+pipeline  {
     agent any
 environment {
         EMAIL_RECIPIENTS = 'madhan.chihcili@gmail.com'
