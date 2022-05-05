@@ -5,9 +5,9 @@ environment {
         EMAIL_RECIPIENTS = 'madhan.chihcili@gmail.com'
 		
     }
-	def developmentArtifactVersion = ''
+	
 	 stages {
-
+def developmentArtifactVersion = ''
         stage('Build with unit testing') {
             steps {
                 // Run the maven build
