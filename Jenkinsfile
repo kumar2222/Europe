@@ -1,4 +1,4 @@
-pipeline {
+pipeline ('MAVEN TEST CASES') {
     agent any
 environment {
         EMAIL_RECIPIENTS = 'madhan.chihcili@gmail.com'
@@ -27,7 +27,7 @@ environment {
                         junit '**//*target/surefire-reports/TEST-*.xml'
                         archive 'target*//*.jar'
                     }else {
-                        bat(/"${mvnHome}\bin\mvn" -Dintegration-tests.skip=true clean package/)
+                        bat(/"${mvnHome}\bin\mvn"  clean package/)
                         def pom = readMavenPom file: 'pom.xml'
                         print pom.version
                         junit '**//*target/surefire-reports/TEST-*.xml'
@@ -38,7 +38,7 @@ environment {
             }
         }
     
-	stage('Integration tests') {
+	stage('install') {
             // Run integration test
             steps {
                 script {
@@ -47,7 +47,7 @@ environment {
                         // just to trigger the integration test without unit testing
                         sh "'${mvnHome}/bin/mvn'  verify -Dunit-tests.skip=true"
                     } else {
-                        bat(/"${mvnHome}\bin\mvn" verify -Dunit-tests.skip=true/)
+                        bat(/"${mvnHome}\bin\mvn" clean install/)
                     }
 
                 }
