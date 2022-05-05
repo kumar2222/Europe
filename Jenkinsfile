@@ -3,8 +3,9 @@ pipeline  {
 	
 environment {
         EMAIL_RECIPIENTS = 'madhan.chihcili@gmail.com'
-		def developmentArtifactVersion = ''
+		
     }
+	def developmentArtifactVersion = ''
 	 stages {
 
         stage('Build with unit testing') {
@@ -72,7 +73,7 @@ stage('Development deploy approval and deployment') {
                             //
 						
 						   print 'ggggggggggggggggggggg'  
-                            if (true) {
+                            if (developmentArtifactVersion != null && !developmentArtifactVersion.isEmpty()) {
                                print 'HELLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL'
                                 // replace it with your application name or make it easily loaded from pom.xml
                                 def jarName = "application-${developmentArtifactVersion}.jar"
