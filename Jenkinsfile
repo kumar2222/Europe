@@ -20,8 +20,4 @@ stage('branches') {
              }
        }
 }
-post {
-  always{
-     echo 'always success '
-  }
-  }
+
