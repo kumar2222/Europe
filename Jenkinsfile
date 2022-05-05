@@ -1,7 +1,9 @@
 pipeline  {
     agent any
+	
 environment {
-        EMAIL_RECIPIENTS = 'madhan.chihcili@gmail.com'
+        EMAIL_RECIPIENTS = 'madhan.chihcili@gmail.com
+		def developmentArtifactVersion = ''
     }
 	 stages {
 
