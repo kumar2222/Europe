@@ -1,11 +1,9 @@
 pipeline {
-    agent any
-
-    
+    agent any  
 stages {
 stage("branches") { 
         when { 
-        expression { 
+        stage { 
              BRANCH_NAME == 'master' || BRANCH_NAME == 'subbranch'
                    }
              }
