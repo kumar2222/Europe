@@ -9,5 +9,8 @@ stage("branches") {
              }
              
        }
+	   steps {
+        echo 'run this stage - when branch is not equal to master'
+    }
 }
 }
