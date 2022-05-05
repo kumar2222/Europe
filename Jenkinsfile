@@ -9,8 +9,10 @@ pipeline {
             }
         }
 }
+}
 post {
   always{
   
      echo 'always success '
+  }
   }
