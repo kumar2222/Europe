@@ -1,13 +1,14 @@
 package com.example.demo;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-@RestController
-public class TestControllerdemo {
+@SpringBootTest
+class TestControllerdemo {
 
-@GetMapping("/")
-public String health() {
-  return "Hello & Welcome to CloudKatha !!!";
-}
+	@Test
+	void contextLoads() {
+		System.out.println("Test excetied sucessfull");
+	}
+
 }
