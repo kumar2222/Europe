@@ -3,8 +3,9 @@ pipeline  {
 	
 environment {
         EMAIL_RECIPIENTS = 'madhan.chihcili@gmail.com'
-		def developmentArtifactVersion = ''
+		
     }
+	
 	 stages {
 
         stage('Build with unit testing') {
@@ -90,5 +91,7 @@ stage('Development deploy approval and deployment') {
             }
         }		
 	}
+	      
 }
+ def developmentArtifactVersion = ''
 
