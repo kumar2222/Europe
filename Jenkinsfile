@@ -141,4 +141,4 @@ stage('Development deploy approval and deployment') {
   }
 
 }
- def developmentArtifactVersion == 'ok'
+ 
