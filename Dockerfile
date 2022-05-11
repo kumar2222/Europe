@@ -1,9 +1,8 @@
-FROM node:16-alpine as builder
-WORKDIR /app          # also creates the directory
-COPY package*.json .
+FROM adoptopenjdk/openjdk11:alpine-jre
 
-COPY . .
+ARG APP_NAME="product-service"
+ARG APP_VERSION="0.0.1"
+ARG JAR_FILE="/build/libs/${APP_NAME}-${APP_VERSION}.jar"
 
-
-FROM nginx:latest
-COPY --from=builder /app/dist/frontend /usr/share/nginx/html
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar", "app.jar"]
