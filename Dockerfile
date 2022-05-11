@@ -7,4 +7,3 @@ RUN ./node_modules/.bin/ng build --production  # not CMD
 
 FROM nginx:latest
 COPY --from=builder /app/dist/frontend /usr/share/nginx/html
-COPY ./nginx/nginx.conf /etc/nginx/conf.d/default.conf
