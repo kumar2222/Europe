@@ -83,14 +83,7 @@ stage('Development deploy approval and deployment') {
                             //input message:'Approve deployment?', submitter: 'it-ops'
                             input message: 'Approve deployment?'
                         }
-                        timeout(time: 2, unit: 'MINUTES') {
-                            //
-						
-						   else {
-                                error 'the application is not  deployed as development version is null!'
-                            }
-
-                        }
+                        timeout(time: 2, unit: 'MINUTES') 
                     }
                 }
             }
