@@ -104,7 +104,7 @@ stage('Development deploy approval and deployment') {
                 }
             }
         }		
-	}
+	
       stage('Building our image') { 
 
           steps { 
