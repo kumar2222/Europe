@@ -87,9 +87,7 @@ stage('Development deploy approval and deployment') {
                             //
 						
 						   print 'ggggggggggggggggggggg'  
-                             else {
-                                error 'the application is not  deployed as development version is null!'
-                            }
+                             
 
                         }
                     }
