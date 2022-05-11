@@ -86,8 +86,7 @@ stage('Development deploy approval and deployment') {
                         timeout(time: 2, unit: 'MINUTES') {
                             //
 						
-						   print 'ggggggggggggggggggggg'  
-                            else {
+						   else {
                                 error 'the application is not  deployed as development version is null!'
                             }
 
@@ -95,7 +94,7 @@ stage('Development deploy approval and deployment') {
                     }
                 }
             }
-        }		
+        }	
 	
       stage('Building our image') { 
 
