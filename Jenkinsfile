@@ -82,7 +82,11 @@ stage('Development deploy approval and deployment') {
                             // you can use the commented line if u have specific user group who CAN ONLY approve
                             //input message:'Approve deployment?', submitter: 'it-ops'
                             input message: 'Approve deployment?'
-                             timeout(time: 2, unit: 'MINUTES') 
+                            
+                        }
+                        timeout(time: 2, unit: 'MINUTES') 
+                        {
+                        print 'sucesfull'
                         }
                        
                     }
