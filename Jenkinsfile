@@ -4,7 +4,7 @@ pipeline {
 
       registry = "banalam/demo11_05_2022" 
 
-      registryCredential = 'dockerhub_id' 
+      registryCredential = 'banalam_id' 
 
       dockerImage = '' 
 
