@@ -1,6 +1,6 @@
 FROM adoptopenjdk/openjdk11:alpine-jre
 
-ARG APP_NAME="product-service"
+ARG APP_NAME="demo"
 ARG APP_VERSION="0.0.1"
 ARG JAR_FILE="/build/libs/${APP_NAME}-${APP_VERSION}.jar"
 
