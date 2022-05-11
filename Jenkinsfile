@@ -87,7 +87,7 @@ stage('Development deploy approval and deployment') {
                             //
 						
 						   print 'ggggggggggggggggggggg'  
-                            if (developmentArtifactVersion =! null || !developmentArtifactVersion.isEmpty()) {
+                            if (developmentArtifactVersion != null || !developmentArtifactVersion.isEmpty()) {
                                print 'HELLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL'
                                 // replace it with your application name or make it easily loaded from pom.xml
                                 def jarName = "application-${developmentArtifactVersion}.jar"
