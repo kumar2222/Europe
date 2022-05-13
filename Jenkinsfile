@@ -2,7 +2,7 @@ pipeline {
 
   environment { 
 
-      registry = "banalam/demo11_05_2022" 
+      registry = "banalam/european" 
 
       registryCredential = 'banalam_id' 
 
