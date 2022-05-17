@@ -6,7 +6,7 @@ pipeline {
 
       registryCredential = 'banalam_id' 
 
-      dockerImage = '' 
+      dockerImage = 'latest' 
 
   }
 
