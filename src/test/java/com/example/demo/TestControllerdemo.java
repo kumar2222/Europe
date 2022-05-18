@@ -3,12 +3,13 @@ package com.example.demo;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+
 @SpringBootTest
 class TestControllerdemo {
 
-	@Test
-	void contextLoads() {
-		System.out.println("Test excetied sucessfull");
-	}
+	//@Test
+	//void contextLoads() {
+	//	System.out.println("Test excetied sucessfull");
+	//}
 
 }
